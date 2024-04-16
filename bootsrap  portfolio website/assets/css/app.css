@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
+
+body{
+    font-family:"Manrope" ,sans-serif;
+}
+
+
+/* bg */
+.bg-2{
+    background-color: rgb(56, 52, 52);
+}
+/* border custom */
+
+.border-custom{
+    border:1px solid rgb(210, 183, 183);
+    transition: all 0.5s ease-in-out;
+}
+
+.border-custom:hover{
+    border-color: var(--bs-blue);
+
+}
+/* nav bar */
+.navbar{
+    --bs-navbar-nav-link-padding-x: 1.2rem;
+}
+
+/* btns */
+.btn{
+    border-radius: 0;
+    padding:10px 20px;
+}
+
+/* service */
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: #2b2626;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.icon:hover {
+    background-color: var(--bs-blue);
+}
+
+/*project */
+.project {
+    overflow: hidden;
+    position: relative;
+}
+
+.project .overlay {
+    padding: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.project:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* review */
+.review img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* our team */
+.team-member .divider {
+    background-color: #6b6363;
+    height: 1px;
+}
+
+.team-member .links .icon {
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    background-color: transparent;
+    border: 1px solid #4a3e3e;
+}
+
+.team-member .links .icon:hover {
+    background-color: var(--bs-red);
+    border-color: var(--bs-blue);
+}
+
+/* contact form */
+#contact .form-control {
+    background-color: transparent;
+    border: 1px solid #f33c0a;
+    border-radius: 0;
+    padding: 5px;
+    color: rgb(210, 193, 193);
+}
+
+#insta-section {
+    position: relative;
+}
+
+#insta-section .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Footer */
+footer ul {
+    padding: 0;
+}
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    color: var(--bs-body);
+}
+
+/* Scroll to top */
+.scroll-to-top {
+    text-decoration: none;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 100;
+}
+
+.scroll-to-top:hover {
+    color: white;
+}
